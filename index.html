@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>My Portofolio Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <script>
+      function toggleMenu(){
+        var menu = document.getElementById("menu-3");
+        //IE > 10
+        menu.classList.toggle("menu-open");
+      }
+    </script>
+
+  </head>
+  <body>
+    <div id="satu">
+      <div id="header">
+        <img src="asset/logo.jp" alt="" id="logo">
+        <div id="menu">
+          <img src="assets/menu.png" alt="nav icon" id="nav-icon" onclick="toggleMenu();">
+          <div id="menu-text" onclick="toggleMenu();">Menu</div>
+          <div class="konten" id="menu-3">
+            <a href="#satu" class="kolom_3">Hallo</a>
+            <a href="#dua" class="kolom_3 kolom_3_tengah" onclick="return smoothScroll('dua')">Karya</a>
+            <a href="#tiga" class="kolom_3" onclick="return smoothScroll('tiga')">Kontak</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="konten">
+        <div id="box_sd">
+          <h1>Selamat Datang<br> di Website Portofolio saya</h1>
+          <a href="#dua"> Lihat Karya </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="dua">
+      <div class="konten">
+        <h2>Karya Saya</h2>
+
+        <div class="kolom_3">
+          <a href="setiap_folio.html">
+            <div class="setiap_karya_gambar">
+              <img src="assets/bg.jpg" alt="">
+              <p>Judul Karya</p>
+            </div>
+          </a>
+          <p class="deskripsi">Deskripsi Proyek</p>
+        </div>
+
+        <div class="kolom_3 kolom_3_tengah">
+          <a href="setiap_folio.html">
+            <div class="setiap_karya_gambar">
+              <img src="assets/bg.jpg" alt="">
+              <p>Judul Karya</p>
+
+            </div>
+          </a>
+          <p class="deskripsi">Deskripsi Proyek</p>
+        </div>
+
+        <div class="kolom_3">
+          <a href="setiap_folio.html">
+            <div class="setiap_karya_gambar">
+              <img src="assets/bg.jpg" alt="">
+              <p>Judul Karya</p>
+            </div>
+          </a>
+          <p class="deskripsi">Deskripsi Proyek</p>
+        </div>
+
+        <div class="clear"></div>
+
+      </div>
+    </div>
+
+    <div id="tiga">
+      <div class="konten">
+        <h2>Kontak Saya</h2>
+
+        <div class="kolom_2">
+          <form  action="" novalidate onsubmit="return validasi(this)">
+            <input type="text" name="nama" placeholder="Nama">
+            <input type="text" name="email" placeholder="Email">
+            <textarea name="pesan" rows="8" cols="40" placeholder="pesan"></textarea>
+            <input type="submit" name="submit" value="kirim">
+          </form>
+        </div>
+
+        <div class="kolom_2">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d32652221.006524764!2d118.01556799999999!3d-2.5502209999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1565955154496!5m2!1sid!2sid" width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <div class="clear"></div>
+
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>&copy; erkhazaga 2019</p>
+    </div>
+
+
+  <script src="folio.js">
+
+  </script>
+  </body>
+</html>

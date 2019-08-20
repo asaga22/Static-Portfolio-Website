@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>My Portofolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script>
+      function toggleMenu(){
+        var menu = document.getElementById("menu-3");
+        //IE > 10
+        menu.classList.toggle("menu-open");
+      }
+    </script>
+
+  </head>
+  <body>
+
+      <div id="header">
+        <img src="asset/logo.jp" alt="" id="logo">
+        <div id="menu">
+          <img src="assets/menu.png" alt="nav icon" id="nav-icon" onclick="toggleMenu();">
+          <div id="menu-text" onclick="toggleMenu();">Menu</div>
+          <div class="konten" id="menu-3">
+            <a href="index.html" class="kolom_3">Hallo</a>
+            <a href="#dua" class="kolom_3 kolom_3_tengah" onclick="return smoothScroll('dua')">Karya</a>
+            <a href="index.html #tiga" class="kolom_3" onclick="return smoothScroll('tiga')">Kontak</a>
+          </div>
+        </div>
+      </div>
+
+    <div style="padding-top:20px;"></div>
+
+    <div class="konten">
+      <div class="panah_box panah_box_kr" onclick="ganti_sebelum()"> < </div>
+
+      <div id="karya_box">
+        <div id="karya_box_kr">
+          <h3>Judul Karya</h3>
+          <p class="deskripsi">Deskripsi Karya</p>
+        </div>
+        <div id="karya_box_kn">
+          <img src="assets/1.jpg" alt="" id="target_gambar">
+        </div>
+      </div>
+
+      <div class="panah_box panah_box_kn" onclick="ganti_berikut()"> > </div>
+
+      <div class="clear"></div>
+
+        <div id="karya_lain">
+          <img src="assets/1.jpg" alt="" onclick="ganti_gambar(this)" class="0">
+          <img src="assets/2.jpg" alt="" onclick="ganti_gambar(this)" class="1">
+          <img src="assets/3.jpg" alt="" onclick="ganti_gambar(this)" class="2">
+        </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="footer">
+      <p>&copy; erkhazaga 2019</p>
+    </div>
+
+    <script src="folio.js"></script>
+  </body>
+</html>
